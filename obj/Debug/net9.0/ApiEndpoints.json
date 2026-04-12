@@ -16,6 +16,11 @@
         "Name": "PageSize",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -31,6 +36,11 @@
       {
         "Name": "request",
         "Type": "Bookify.Controllers.ActivityLogRequest",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -58,6 +68,11 @@
         "Name": "PageSize",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -74,6 +89,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -90,6 +110,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -106,6 +131,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -122,6 +152,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -138,6 +173,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -149,7 +189,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -164,6 +210,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -175,7 +226,13 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -190,6 +247,11 @@
         "Name": "limit",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -211,6 +273,11 @@
         "Name": "timeSpan",
         "Type": "System.TimeSpan",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -226,6 +293,11 @@
       {
         "Name": "bookId",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -248,6 +320,11 @@
         "Name": "timeSpan",
         "Type": "System.TimeSpan",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -264,6 +341,11 @@
         "Name": "dto",
         "Type": "Bookify.Models.DTO.Auth.LoginDto",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -275,7 +357,13 @@
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -289,6 +377,11 @@
       {
         "Name": "dto",
         "Type": "Bookify.Models.DTO.RefreshTokenDto.RefreshTokenDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -306,110 +399,9 @@
         "Name": "dto",
         "Type": "Bookify.Models.DTO.Registration.RegisterDto",
         "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.AuthorsController",
-    "Method": "GetAuthors",
-    "RelativePath": "api/Authors",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "PageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
       },
       {
-        "Name": "PageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.AuthorsController",
-    "Method": "CreateAuthor",
-    "RelativePath": "api/Authors",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Author.AuthorCreateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.AuthorsController",
-    "Method": "GetAuthorById",
-    "RelativePath": "api/Authors/{authorId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authorId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.AuthorsController",
-    "Method": "UpdateAuthor",
-    "RelativePath": "api/Authors/{authorId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authorId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Author.AuthorUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.AuthorsController",
-    "Method": "DeleteAuthor",
-    "RelativePath": "api/Authors/{authorId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authorId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.AuthorsController",
-    "Method": "GetAuthorById",
-    "RelativePath": "api/Authors/{authorName}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authorName",
+        "Name": "api-version",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -433,6 +425,11 @@
         "Name": "narratorId",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -449,6 +446,11 @@
         "Name": "bookFileId",
         "Type": "System.Int32",
         "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -464,6 +466,11 @@
       {
         "Name": "narratorId",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -486,6 +493,11 @@
         "Name": "narratorId",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -507,6 +519,11 @@
         "Name": "page",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -522,6 +539,11 @@
       {
         "Name": "bookId",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
@@ -544,6 +566,400 @@
         "Name": "page",
         "Type": "System.Int32",
         "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "GetCollections",
+    "RelativePath": "api/Collections",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "CreateCollection",
+    "RelativePath": "api/Collections",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Collection.CreateCollectionDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "GetCollectionById",
+    "RelativePath": "api/Collections/{collectionId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collectionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "UpdateCollection",
+    "RelativePath": "api/Collections/{collectionId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collectionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Collection.UpdateCollectionDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "DeleteCollection",
+    "RelativePath": "api/Collections/{collectionId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collectionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "DeleteBookFromCollection",
+    "RelativePath": "api/Collections/{collectionId}/books/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "collectionId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CollectionsController",
+    "Method": "AddBookToCollection",
+    "RelativePath": "api/Collections/add-book",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Collection.BookCollectionDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.FavoritesController",
+    "Method": "GetFavorites",
+    "RelativePath": "api/Favorites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.FavoritesController",
+    "Method": "AddToFavorite",
+    "RelativePath": "api/Favorites",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.FavoritesController",
+    "Method": "DeleteFavorite",
+    "RelativePath": "api/Favorites/{bookId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.PasswordController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Password/change-password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Account.ChangePasswordRequestDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.PasswordController",
+    "Method": "ForgetPassword",
+    "RelativePath": "api/Password/forget",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.PasswordController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Password/reset",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Account.ResetPasswordRequestDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "api-version",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.AuthorsController",
+    "Method": "GetAuthors",
+    "RelativePath": "api/v1/Authors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.AuthorsController",
+    "Method": "CreateAuthor",
+    "RelativePath": "api/v1/Authors",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Author.AuthorCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.AuthorsController",
+    "Method": "GetAuthorById",
+    "RelativePath": "api/v1/Authors/{authorId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.AuthorsController",
+    "Method": "UpdateAuthor",
+    "RelativePath": "api/v1/Authors/{authorId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Bookify.Models.DTO.Author.AuthorUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.AuthorsController",
+    "Method": "DeleteAuthor",
+    "RelativePath": "api/v1/Authors/{authorId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Bookify.Controllers.AuthorsController",
+    "Method": "GetAuthorById",
+    "RelativePath": "api/v1/Authors/{authorName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorName",
+        "Type": "System.String",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -551,7 +967,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "CreateBook",
-    "RelativePath": "api/Books",
+    "RelativePath": "api/v1/Books",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -567,7 +983,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "GetBookById",
-    "RelativePath": "api/Books/{bookId}",
+    "RelativePath": "api/v1/Books/{bookId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -583,7 +999,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "UpdateBook",
-    "RelativePath": "api/Books/{bookId}",
+    "RelativePath": "api/v1/Books/{bookId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -604,7 +1020,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "DeleteBook",
-    "RelativePath": "api/Books/{bookId}",
+    "RelativePath": "api/v1/Books/{bookId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -620,7 +1036,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "UpdateMonetizationStatus",
-    "RelativePath": "api/Books/{bookId}/monetization",
+    "RelativePath": "api/v1/Books/{bookId}/monetization",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -641,7 +1057,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "GetBooksByAuthor",
-    "RelativePath": "api/Books/author/{authorId}",
+    "RelativePath": "api/v1/Books/author/{authorId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -667,7 +1083,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "SearchBooks",
-    "RelativePath": "api/Books/search",
+    "RelativePath": "api/v1/Books/search",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -728,7 +1144,7 @@
   {
     "ContainingType": "Bookify.Controllers.BooksController",
     "Method": "GetBooksByAuthor",
-    "RelativePath": "api/Books/tags/{tagId}/books",
+    "RelativePath": "api/v1/Books/tags/{tagId}/books",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -742,178 +1158,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CollectionsController",
-    "Method": "GetCollections",
-    "RelativePath": "api/Collections",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CollectionsController",
-    "Method": "CreateCollection",
-    "RelativePath": "api/Collections",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Collection.CreateCollectionDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CollectionsController",
-    "Method": "GetCollectionById",
-    "RelativePath": "api/Collections/{collectionId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "collectionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CollectionsController",
-    "Method": "UpdateCollection",
-    "RelativePath": "api/Collections/{collectionId}",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "collectionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Collection.UpdateCollectionDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CollectionsController",
-    "Method": "DeleteCollection",
-    "RelativePath": "api/Collections/{collectionId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "collectionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CollectionsController",
-    "Method": "DeleteBookFromCollection",
-    "RelativePath": "api/Collections/{collectionId}/books/{bookId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "collectionId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "bookId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "CollectionsController",
-    "Method": "AddBookToCollection",
-    "RelativePath": "api/Collections/add-book",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Collection.BookCollectionDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.FavoritesController",
-    "Method": "GetFavorites",
-    "RelativePath": "api/Favorites",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "PageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.FavoritesController",
-    "Method": "AddToFavorite",
-    "RelativePath": "api/Favorites",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bookId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.FavoritesController",
-    "Method": "DeleteFavorite",
-    "RelativePath": "api/Favorites/{bookId}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bookId",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Bookify.Controllers.NarratorsController",
     "Method": "GetNarrators",
-    "RelativePath": "api/Narrators",
+    "RelativePath": "api/v1/Narrators",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -934,7 +1181,7 @@
   {
     "ContainingType": "Bookify.Controllers.NarratorsController",
     "Method": "CreateNarrator",
-    "RelativePath": "api/Narrators",
+    "RelativePath": "api/v1/Narrators",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -950,7 +1197,7 @@
   {
     "ContainingType": "Bookify.Controllers.NarratorsController",
     "Method": "GetNarratorById",
-    "RelativePath": "api/Narrators/{narratorId}",
+    "RelativePath": "api/v1/Narrators/{narratorId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -966,7 +1213,7 @@
   {
     "ContainingType": "Bookify.Controllers.NarratorsController",
     "Method": "UpdateNarrator",
-    "RelativePath": "api/Narrators/{narratorId}",
+    "RelativePath": "api/v1/Narrators/{narratorId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -987,7 +1234,7 @@
   {
     "ContainingType": "Bookify.Controllers.NarratorsController",
     "Method": "DeleteNarrator",
-    "RelativePath": "api/Narrators/{narratorId}",
+    "RelativePath": "api/v1/Narrators/{narratorId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1001,57 +1248,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Bookify.Controllers.PasswordController",
-    "Method": "ChangePassword",
-    "RelativePath": "api/Password/change-password",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Account.ChangePasswordRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.PasswordController",
-    "Method": "ForgetPassword",
-    "RelativePath": "api/Password/forget",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Bookify.Controllers.PasswordController",
-    "Method": "ResetPassword",
-    "RelativePath": "api/Password/reset",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "dto",
-        "Type": "Bookify.Models.DTO.Account.ResetPasswordRequestDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Bookify.Controllers.PaymentsController",
     "Method": "CreatePaymentIntent",
-    "RelativePath": "api/Payments/create-intent",
+    "RelativePath": "api/v1/Payments/create-intent",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1067,7 +1266,7 @@
   {
     "ContainingType": "Bookify.Controllers.PaymentsController",
     "Method": "HandleWebhook",
-    "RelativePath": "api/Payments/webhook",
+    "RelativePath": "api/v1/Payments/webhook",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1077,7 +1276,7 @@
   {
     "ContainingType": "Bookify.Controllers.PlansController",
     "Method": "GetActivePlans",
-    "RelativePath": "api/Plans",
+    "RelativePath": "api/v1/Plans",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1087,7 +1286,7 @@
   {
     "ContainingType": "Bookify.Controllers.PlansController",
     "Method": "CreatePlan",
-    "RelativePath": "api/Plans",
+    "RelativePath": "api/v1/Plans",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1103,7 +1302,7 @@
   {
     "ContainingType": "Bookify.Controllers.PlansController",
     "Method": "GetPlanById",
-    "RelativePath": "api/Plans/{planId}",
+    "RelativePath": "api/v1/Plans/{planId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1119,7 +1318,7 @@
   {
     "ContainingType": "Bookify.Controllers.PlansController",
     "Method": "UpdatePlan",
-    "RelativePath": "api/Plans/{planId}",
+    "RelativePath": "api/v1/Plans/{planId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1140,7 +1339,7 @@
   {
     "ContainingType": "Bookify.Controllers.PlansController",
     "Method": "UpdatePlanStatus",
-    "RelativePath": "api/Plans/{planId}/status",
+    "RelativePath": "api/v1/Plans/{planId}/status",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1161,7 +1360,7 @@
   {
     "ContainingType": "Bookify.Controllers.PlansController",
     "Method": "GetAllPlans",
-    "RelativePath": "api/Plans/all-plans",
+    "RelativePath": "api/v1/Plans/all-plans",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1171,7 +1370,7 @@
   {
     "ContainingType": "Bookify.Controllers.ReviewsController",
     "Method": "CreateReviewBook",
-    "RelativePath": "api/Reviews",
+    "RelativePath": "api/v1/Reviews",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1187,7 +1386,7 @@
   {
     "ContainingType": "Bookify.Controllers.ReviewsController",
     "Method": "GetReviewById",
-    "RelativePath": "api/Reviews/{reviewId}",
+    "RelativePath": "api/v1/Reviews/{reviewId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1203,7 +1402,7 @@
   {
     "ContainingType": "Bookify.Controllers.ReviewsController",
     "Method": "UpdateReview",
-    "RelativePath": "api/Reviews/{reviewId}",
+    "RelativePath": "api/v1/Reviews/{reviewId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1224,7 +1423,7 @@
   {
     "ContainingType": "Bookify.Controllers.ReviewsController",
     "Method": "DeleteReviewAsync",
-    "RelativePath": "api/Reviews/{reviewId}",
+    "RelativePath": "api/v1/Reviews/{reviewId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1240,7 +1439,7 @@
   {
     "ContainingType": "Bookify.Controllers.ReviewsController",
     "Method": "GetBookReviews",
-    "RelativePath": "api/Reviews/book/{bookId}",
+    "RelativePath": "api/v1/Reviews/book/{bookId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1266,7 +1465,7 @@
   {
     "ContainingType": "Bookify.Controllers.SubscriptionsController",
     "Method": "StartFreeTrial",
-    "RelativePath": "api/Subscriptions/free-trial",
+    "RelativePath": "api/v1/Subscriptions/free-trial",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1276,7 +1475,7 @@
   {
     "ContainingType": "Bookify.Controllers.SubscriptionsController",
     "Method": "HasAccessBook",
-    "RelativePath": "api/Subscriptions/has-access/{bookId}",
+    "RelativePath": "api/v1/Subscriptions/has-access/{bookId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1292,7 +1491,7 @@
   {
     "ContainingType": "Bookify.Controllers.SubscriptionsController",
     "Method": "GetMySubscription",
-    "RelativePath": "api/Subscriptions/my-subscription",
+    "RelativePath": "api/v1/Subscriptions/my-subscription",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1302,7 +1501,7 @@
   {
     "ContainingType": "Bookify.Controllers.SubscriptionsController",
     "Method": "Subscribe",
-    "RelativePath": "api/Subscriptions/subscribe",
+    "RelativePath": "api/v1/Subscriptions/subscribe",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1318,7 +1517,7 @@
   {
     "ContainingType": "Bookify.Controllers.SubscriptionsController",
     "Method": "Unsubscribe",
-    "RelativePath": "api/Subscriptions/unsubscribe",
+    "RelativePath": "api/v1/Subscriptions/unsubscribe",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1328,7 +1527,7 @@
   {
     "ContainingType": "TagsController",
     "Method": "GetTags",
-    "RelativePath": "api/Tags",
+    "RelativePath": "api/v1/Tags",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1338,7 +1537,7 @@
   {
     "ContainingType": "TagsController",
     "Method": "CreateTag",
-    "RelativePath": "api/Tags",
+    "RelativePath": "api/v1/Tags",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -1354,7 +1553,7 @@
   {
     "ContainingType": "TagsController",
     "Method": "GetTagById",
-    "RelativePath": "api/Tags/{tagId}",
+    "RelativePath": "api/v1/Tags/{tagId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1370,7 +1569,7 @@
   {
     "ContainingType": "TagsController",
     "Method": "UpdateTag",
-    "RelativePath": "api/Tags/{tagId}",
+    "RelativePath": "api/v1/Tags/{tagId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -1391,7 +1590,7 @@
   {
     "ContainingType": "TagsController",
     "Method": "DeleteTag",
-    "RelativePath": "api/Tags/{tagId}",
+    "RelativePath": "api/v1/Tags/{tagId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -1407,7 +1606,7 @@
   {
     "ContainingType": "Bookify.Controllers.UsersController",
     "Method": "GetUserProfile",
-    "RelativePath": "api/Users/me",
+    "RelativePath": "api/v1/Users/me",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -1417,7 +1616,7 @@
   {
     "ContainingType": "Bookify.Controllers.UsersController",
     "Method": "UpdateUserProfile",
-    "RelativePath": "api/Users/me",
+    "RelativePath": "api/v1/Users/me",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

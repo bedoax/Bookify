@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.Book;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.Book;
 using Bookify.Models.DTO.Pagination;
 using Bookify.Models.Entities;
 using Bookify.Models.Mapping;
@@ -9,7 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 namespace Bookify.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class BooksController : ControllerBase
     {
         private readonly IBookService _bookService;

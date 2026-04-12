@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.Tag;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.Tag;
 using Bookify.Models.Entities;
 using Bookify.Models.Mapping;
 using Bookify.Models.Roles;
@@ -6,7 +7,8 @@ using Bookify.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
+[ApiVersion("1.0")]
 public class TagsController : ControllerBase
 {
     private readonly ITagService _tagService;

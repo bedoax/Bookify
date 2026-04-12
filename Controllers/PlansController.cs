@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.Plan;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.Plan;
 using Bookify.Models.Mapping;
 using Bookify.Models.Roles;
 using Bookify.Services.Interfaces;
@@ -10,7 +11,8 @@ namespace Bookify.Controllers
 {
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class PlansController : ControllerBase
     {
         private readonly IPlanService _IplanService;

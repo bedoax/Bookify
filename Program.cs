@@ -1,3 +1,4 @@
+using Asp.Versioning.ApiExplorer;
 using Bookify.Data;
 using Bookify.Middleware;
 using Bookify.Models.DTO.Email;
@@ -118,18 +119,35 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+
+builder.Services.AddApiVersioning()
+    .AddApiExplorer(options =>
+    {
+        options.GroupNameFormat = "'v'VVV"; // v1
+        options.SubstituteApiVersionInUrl = true;
+    });
+
 // Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
-
+var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 app.UseGlobalExceptionHandler();
 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+
+    app.UseSwaggerUI(options =>
+    {
+        foreach (var description in provider.ApiVersionDescriptions)
+        {
+            options.SwaggerEndpoint(
+                $"/swagger/{description.GroupName}/swagger.json",
+                description.GroupName.ToUpperInvariant());
+        }
+    });
 }
 
 app.UseHttpsRedirection();

@@ -26,6 +26,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -37,6 +45,16 @@
       "post": {
         "tags": [
           "ActivityLogs"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -93,6 +111,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -115,6 +141,14 @@
               "type": "integer",
               "format": "int32",
               "default": 10
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -139,6 +173,14 @@
               "format": "int32",
               "default": 10
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -161,6 +203,14 @@
               "type": "integer",
               "format": "int32",
               "default": 10
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -185,6 +235,14 @@
               "format": "int32",
               "default": 10
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -207,6 +265,14 @@
               "type": "integer",
               "format": "int32",
               "default": 10
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -231,6 +297,14 @@
               "format": "int32",
               "default": 10
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -245,6 +319,16 @@
         "tags": [
           "Analytics"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -256,6 +340,16 @@
       "get": {
         "tags": [
           "Analytics"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "responses": {
           "200": {
@@ -277,6 +371,14 @@
               "type": "integer",
               "format": "int32",
               "default": 5
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -300,6 +402,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -329,6 +439,14 @@
             "schema": {
               "type": "string",
               "format": "date-span"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -360,6 +478,14 @@
               "type": "string",
               "format": "date-span"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -373,6 +499,16 @@
       "post": {
         "tags": [
           "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -405,6 +541,16 @@
         "tags": [
           "Auth"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -436,6 +582,16 @@
         "tags": [
           "Auth"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -447,6 +603,16 @@
       "post": {
         "tags": [
           "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -474,7 +640,7 @@
         }
       }
     },
-    "/api/Authors": {
+    "/api/v1/Authors": {
       "get": {
         "tags": [
           "Authors"
@@ -533,7 +699,7 @@
         }
       }
     },
-    "/api/Authors/{authorId}": {
+    "/api/v1/Authors/{authorId}": {
       "get": {
         "tags": [
           "Authors"
@@ -617,7 +783,7 @@
         }
       }
     },
-    "/api/Authors/{authorName}": {
+    "/api/v1/Authors/{authorName}": {
       "get": {
         "tags": [
           "Authors"
@@ -660,6 +826,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -690,6 +864,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -712,6 +894,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -736,6 +926,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -758,6 +956,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -787,6 +993,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -818,6 +1032,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -827,7 +1049,7 @@
         }
       }
     },
-    "/api/Books/{bookId}": {
+    "/api/v1/Books/{bookId}": {
       "get": {
         "tags": [
           "Books"
@@ -911,7 +1133,7 @@
         }
       }
     },
-    "/api/Books/author/{authorId}": {
+    "/api/v1/Books/author/{authorId}": {
       "get": {
         "tags": [
           "Books"
@@ -950,7 +1172,7 @@
         }
       }
     },
-    "/api/Books/tags/{tagId}/books": {
+    "/api/v1/Books/tags/{tagId}/books": {
       "get": {
         "tags": [
           "Books"
@@ -973,7 +1195,7 @@
         }
       }
     },
-    "/api/Books/search": {
+    "/api/v1/Books/search": {
       "get": {
         "tags": [
           "Books"
@@ -1066,7 +1288,7 @@
         }
       }
     },
-    "/api/Books": {
+    "/api/v1/Books": {
       "post": {
         "tags": [
           "Books"
@@ -1097,7 +1319,7 @@
         }
       }
     },
-    "/api/Books/{bookId}/monetization": {
+    "/api/v1/Books/{bookId}/monetization": {
       "put": {
         "tags": [
           "Books"
@@ -1132,6 +1354,16 @@
         "tags": [
           "Collections"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -1141,6 +1373,16 @@
       "post": {
         "tags": [
           "Collections"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -1182,6 +1424,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1202,6 +1452,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -1243,6 +1501,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1256,6 +1522,16 @@
       "post": {
         "tags": [
           "Collections"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -1306,6 +1582,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1336,6 +1620,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1355,6 +1647,14 @@
             "schema": {
               "type": "integer",
               "format": "int32"
+            }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           }
         ],
@@ -1379,6 +1679,14 @@
               "type": "integer",
               "format": "int32"
             }
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1388,7 +1696,7 @@
         }
       }
     },
-    "/api/Narrators": {
+    "/api/v1/Narrators": {
       "get": {
         "tags": [
           "Narrators"
@@ -1447,7 +1755,7 @@
         }
       }
     },
-    "/api/Narrators/{narratorId}": {
+    "/api/v1/Narrators/{narratorId}": {
       "get": {
         "tags": [
           "Narrators"
@@ -1536,6 +1844,16 @@
         "tags": [
           "Password"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -1566,6 +1884,16 @@
       "post": {
         "tags": [
           "Password"
+        ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
         ],
         "requestBody": {
           "content": {
@@ -1598,6 +1926,16 @@
         "tags": [
           "Password"
         ],
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "requestBody": {
           "content": {
             "application/json": {
@@ -1624,7 +1962,7 @@
         }
       }
     },
-    "/api/Payments/create-intent": {
+    "/api/v1/Payments/create-intent": {
       "post": {
         "tags": [
           "Payments"
@@ -1655,7 +1993,7 @@
         }
       }
     },
-    "/api/Payments/webhook": {
+    "/api/v1/Payments/webhook": {
       "post": {
         "tags": [
           "Payments"
@@ -1667,7 +2005,7 @@
         }
       }
     },
-    "/api/Plans/all-plans": {
+    "/api/v1/Plans/all-plans": {
       "get": {
         "tags": [
           "Plans"
@@ -1679,7 +2017,7 @@
         }
       }
     },
-    "/api/Plans": {
+    "/api/v1/Plans": {
       "get": {
         "tags": [
           "Plans"
@@ -1720,7 +2058,7 @@
         }
       }
     },
-    "/api/Plans/{planId}": {
+    "/api/v1/Plans/{planId}": {
       "get": {
         "tags": [
           "Plans"
@@ -1783,7 +2121,7 @@
         }
       }
     },
-    "/api/Plans/{planId}/status": {
+    "/api/v1/Plans/{planId}/status": {
       "put": {
         "tags": [
           "Plans"
@@ -1813,7 +2151,7 @@
         }
       }
     },
-    "/api/Reviews/book/{bookId}": {
+    "/api/v1/Reviews/book/{bookId}": {
       "get": {
         "tags": [
           "Reviews"
@@ -1852,7 +2190,7 @@
         }
       }
     },
-    "/api/Reviews/{reviewId}": {
+    "/api/v1/Reviews/{reviewId}": {
       "get": {
         "tags": [
           "Reviews"
@@ -1936,7 +2274,7 @@
         }
       }
     },
-    "/api/Reviews": {
+    "/api/v1/Reviews": {
       "post": {
         "tags": [
           "Reviews"
@@ -1967,7 +2305,7 @@
         }
       }
     },
-    "/api/Subscriptions/my-subscription": {
+    "/api/v1/Subscriptions/my-subscription": {
       "get": {
         "tags": [
           "Subscriptions"
@@ -1979,7 +2317,7 @@
         }
       }
     },
-    "/api/Subscriptions/has-access/{bookId}": {
+    "/api/v1/Subscriptions/has-access/{bookId}": {
       "get": {
         "tags": [
           "Subscriptions"
@@ -2002,7 +2340,7 @@
         }
       }
     },
-    "/api/Subscriptions/subscribe": {
+    "/api/v1/Subscriptions/subscribe": {
       "post": {
         "tags": [
           "Subscriptions"
@@ -2024,7 +2362,7 @@
         }
       }
     },
-    "/api/Subscriptions/unsubscribe": {
+    "/api/v1/Subscriptions/unsubscribe": {
       "post": {
         "tags": [
           "Subscriptions"
@@ -2036,7 +2374,7 @@
         }
       }
     },
-    "/api/Subscriptions/free-trial": {
+    "/api/v1/Subscriptions/free-trial": {
       "post": {
         "tags": [
           "Subscriptions"
@@ -2048,7 +2386,7 @@
         }
       }
     },
-    "/api/Tags": {
+    "/api/v1/Tags": {
       "get": {
         "tags": [
           "Tags"
@@ -2089,7 +2427,7 @@
         }
       }
     },
-    "/api/Tags/{tagId}": {
+    "/api/v1/Tags/{tagId}": {
       "get": {
         "tags": [
           "Tags"
@@ -2173,7 +2511,7 @@
         }
       }
     },
-    "/api/Users/me": {
+    "/api/v1/Users/me": {
       "get": {
         "tags": [
           "Users"
@@ -2375,6 +2713,14 @@
           "audioDuration": {
             "type": "string",
             "format": "date-span",
+            "nullable": true
+          },
+          "narratorIds": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            },
             "nullable": true
           },
           "language": {

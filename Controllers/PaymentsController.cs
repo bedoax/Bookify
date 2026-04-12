@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.Payment;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.Payment;
 using Bookify.Models.Mapping;
 using Bookify.Services.Implementations;
 using Bookify.Services.Interfaces;
@@ -9,7 +10,8 @@ namespace Bookify.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class PaymentsController : ControllerBase
     {
         private readonly IStripeService _stripeService;

@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.UserProfile;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.UserProfile;
 using Bookify.Models.Mapping;
 using Bookify.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
@@ -8,7 +9,8 @@ namespace Bookify.Controllers
 {
     [Authorize]
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class UsersController : ControllerBase
     {
         private readonly IAccountService _accountService;

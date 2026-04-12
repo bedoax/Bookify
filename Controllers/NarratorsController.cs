@@ -1,16 +1,18 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Asp.Versioning;
 using Bookify.Models.DTO.Narrator;
 using Bookify.Models.DTO.Pagination;
 using Bookify.Models.Roles;
 using Bookify.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 namespace Bookify.Controllers
 {
 
         [ApiController]
-        [Route("api/[controller]")]
-        public class NarratorsController : ControllerBase
+         [Route("api/v{version:apiVersion}/[controller]")]
+         [ApiVersion("1.0")]
+    public class NarratorsController : ControllerBase
         {
             private readonly INarratorService _narratorService;
 

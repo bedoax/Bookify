@@ -164,3 +164,7 @@ C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swag
 C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Dapper.dll
 C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\SharpYaml.dll
+C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Asp.Versioning.Abstractions.dll
+C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Asp.Versioning.Http.dll
+C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Asp.Versioning.Mvc.dll
+C:\Users\abdel\source\repos\Bookify\bin\Debug\net9.0\Asp.Versioning.Mvc.ApiExplorer.dll

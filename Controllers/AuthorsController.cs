@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.Author;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.Author;
 using Bookify.Models.DTO.Collection;
 using Bookify.Models.DTO.Pagination;
 using Bookify.Models.Mapping;
@@ -13,7 +14,8 @@ namespace Bookify.Controllers
 {
 
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class AuthorsController : ControllerBase
     {
         private readonly IAuthorService _authorService;

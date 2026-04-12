@@ -1,4 +1,5 @@
-﻿using Bookify.Models.DTO.Pagination;
+﻿using Asp.Versioning;
+using Bookify.Models.DTO.Pagination;
 using Bookify.Models.DTO.Review;
 using Bookify.Models.Mapping;
 using Bookify.Services.Interfaces;
@@ -9,7 +10,8 @@ namespace Bookify.Controllers
 {
     
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    [ApiVersion("1.0")]
     public class ReviewsController : ControllerBase
     {
         private readonly IReviewService _reviewService;
